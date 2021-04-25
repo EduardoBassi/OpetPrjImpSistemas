@@ -3,3 +3,4 @@ OpetPrjImpSistemas
 
 
 - Inicialização do Git
+- commit inicial

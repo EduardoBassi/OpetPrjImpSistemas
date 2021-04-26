@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faces-config version="3.1" 
+              xmlns="http://xmlns.jcp.org/xml/ns/javaee"         
+              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+
+	<navigation-rule>
+		<navigation-case>
+			<from-outcome>login</from-outcome>
+			<to-view-id>/pages/login.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>index</from-outcome>
+			<to-view-id>/pages/index.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>admin</from-outcome>
+			<to-view-id>/pages/protected/admin/admin.xhtml</to-view-id>
+		</navigation-case>
+		<navigation-case>
+			<from-outcome>cadastroUsuario</from-outcome>
+			<to-view-id>/pages/cadastroUsuario.xhtml</to-view-id>
+		</navigation-case>
+	</navigation-rule>
+
+</faces-config>

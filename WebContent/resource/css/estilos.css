@@ -1,0 +1,28 @@
+@charset "ISO-8859-1";
+
+#div_login{
+	width: 500px;
+	margin: auto;
+	margin-top: 150px
+}
+
+.grid_login{
+	background-color: #f2f2f2;
+	border-radius: 8px;
+	border: 1px solid #ccc;
+	padding: 10px;
+}
+
+#div_cadUsuario{
+	width: 500px;
+	height: auto;
+	margin: auto;
+	margin-top: 150px
+}
+
+.grid_cadUsuario{
+	background-color: #f2f2f2;
+	border-radius: 8px;
+	border: 1px solid #ccc;
+	padding: 10px;
+}

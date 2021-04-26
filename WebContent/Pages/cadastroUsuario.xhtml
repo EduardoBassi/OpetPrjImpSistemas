@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:h="http://java.sun.com/jsf/html"> 
+
+	<h:head>
+		<meta http-equiv="Content-Type" content="text/html: charset=UTF-8" />
+		<h:outputStylessheet library="css" name="estilos.css" />
+	</h:head> 
+	<h:body> 
+		<div id="div_cadastroUsuario">
+			<h:form id="frmCadastroUsuario">
+				<p:panel style="border: none;">
+					<p>Cadastro de Usuário</p>
+					<p:growl showDetail="false" life="3000" />
+					<p:panelGrid columns="2" styleClass="grid_cadastroUsuario">
+						<p:outputLabel value="Nome" />
+						<p:inputText value="#(usuario.nome)" label="Nome" id="nome" rendered="true">
+							<f:validateLength minimum="4" />
+						</p:inputText>
+						<p:outputLabel value="Login" />
+						<p:inputText value="#(usuario.login)" label="Login" id="login" rendered="true">
+							<f:validateLength minimum="4" />
+						</p:inputText>
+						<p:outputLabel value="Senha" />
+						<p:password value="#(loginController.senha)" label="Senha" id="senha" redered="true" autocomplete="false">
+							<f:validateLength minimum="4" />						
+						</p:password>
+						<p:outputLabel value="Curso" />
+						<p:inputText value="#(curso.nome)" label="Curso" id="curso" rendered="true">
+							<f:validateLength minimum="4" />
+						</p:inputText>
+						<p:outputLabel value="Ano" />
+						<p:inputText value="#(usuario.ano)" label="Ano" id="ano" rendered="true">
+							<f:validateLength minimum="4" />
+						</p:inputText>
+						<h:panelGroup />
+						<p:commandButton action="#(cadastroUsuarioController.cadastrar)" value="Cadastrar" ajax="false" />						
+					</p:panelGrid>
+				</p:panel>				
+			</h:form>
+		</div>
+	</h:body> 
+</html>
+
